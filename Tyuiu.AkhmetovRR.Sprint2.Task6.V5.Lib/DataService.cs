@@ -7,15 +7,15 @@ namespace Tyuiu.AkhmetovRR.Sprint2.Task6.V5.Lib
         {
             switch (value)
             {
-                case 6: return "Шестерка";
-                case 7: return "Семерка";
-                case 8: return "Восьмерка";
-                case 9: return "Девятка";
-                case 10: return "Десятка";
-                case 11: return "Валет";
-                case 12: return "Дама";
-                case 13: return "Король";
-                case 14: return "Туза";
+                case 6: return "шестерка";
+                case 7: return "семерка";
+                case 8: return "восьмерка";
+                case 9: return "девятка";
+                case 10: return "десятка";
+                case 11: return "валет";
+                case 12: return "дама";
+                case 13: return "король";
+                case 14: return "туза";
                 default: throw new ArgumentException($"Значение карты должно быть от 6 до 14. Значение{value}"); ;
             }
         }

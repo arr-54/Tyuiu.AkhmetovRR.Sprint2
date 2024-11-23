@@ -1,4 +1,4 @@
-﻿using Tyuiu.AkhmetovRR.Sprint2.Task6.V5.Lib__;
+﻿using Tyuiu.AkhmetovRR.Sprint2.Task6.V5.Lib;
 
 namespace Tyuiu.AkhmetovRR.Sprint2.Task6.V5
 {
@@ -23,7 +23,7 @@ namespace Tyuiu.AkhmetovRR.Sprint2.Task6.V5
             }
             else
             {
-                res = "Достоинство соответствующей карты:" + ds.FindMonthName(NumMonth);
+                res = "Достоинство соответствующей карты:" + ds.FindCardValue(NumMonth);
             }
             Console.WriteLine(res);
             Console.ReadKey();
