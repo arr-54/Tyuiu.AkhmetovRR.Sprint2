@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Tyuiu.AkhmetovRR.Sprint2.Task6.V5.Lib__
+﻿using tyuiu.cources.programming.interfaces.Sprint2;
+namespace Tyuiu.AkhmetovRR.Sprint2.Task6.V5.Lib
 {
-    public class DataService
+    public class DataService : ISprint2Task6V5
     {
-        public string FindMonthName(int value)
+        public string FindCardValue(int value)
         {
             switch (value)
             {
@@ -23,11 +18,6 @@ namespace Tyuiu.AkhmetovRR.Sprint2.Task6.V5.Lib__
                 case 14: return "Туза";
                 default: throw new ArgumentException($"Значение карты должно быть от 6 до 14. Значение{value}"); ;
             }
-        }
-
-        public void FindMothhName(int v)
-        {
-            throw new ArgumentException();
         }
     }
 }

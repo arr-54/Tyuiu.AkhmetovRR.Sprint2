@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using Tyuiu.AkhmetovRR.Sprint2.Task6.V5.Lib__;
+using Tyuiu.AkhmetovRR.Sprint2.Task6.V5.Lib;
 
 namespace Tyuiu.AkhmetovRR.Sprint2.Task6.V5.Test
 {
@@ -12,23 +12,23 @@ namespace Tyuiu.AkhmetovRR.Sprint2.Task6.V5.Test
         {
             DataService ds = new DataService();
 
-            Assert.AreEqual("Шестерка", ds.FindMonthName(6));
-            Assert.AreEqual("Семерка", ds.FindMonthName(7));
-            Assert.AreEqual("Восьмерка", ds.FindMonthName(8));
-            Assert.AreEqual("Девятка", ds.FindMonthName(9));
-            Assert.AreEqual("Десятка", ds.FindMonthName(10));
-            Assert.AreEqual("Валет", ds.FindMonthName(11));
-            Assert.AreEqual("Дама", ds.FindMonthName(12));
-            Assert.AreEqual("Король", ds.FindMonthName(13));
-            Assert.AreEqual("Туза", ds.FindMonthName(14));
+            Assert.AreEqual("Шестерка", ds.FindCardValue(6));
+            Assert.AreEqual("Семерка", ds.FindCardValue(7));
+            Assert.AreEqual("Восьмерка", ds.FindCardValue(8));
+            Assert.AreEqual("Девятка", ds.FindCardValue(9));
+            Assert.AreEqual("Десятка", ds.FindCardValue(10));
+            Assert.AreEqual("Валет", ds.FindCardValue(11));
+            Assert.AreEqual("Дама", ds.FindCardValue(12));
+            Assert.AreEqual("Король", ds.FindCardValue(13));
+            Assert.AreEqual("Туза", ds.FindCardValue(14));
 
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                ds.FindMonthName(-1);
+                ds.FindCardValue(-1);
             });
             Assert.ThrowsException<ArgumentException>(() =>
             {
-                ds.FindMothhName(13);
+                ds.FindCardValue(13);
             });
         }
     }

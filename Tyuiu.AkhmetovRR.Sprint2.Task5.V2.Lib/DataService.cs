@@ -2,14 +2,9 @@
 
 namespace Tyuiu.AkhmetovRR.Sprint2.Task5.V2.Lib
 {
-    public class DataService 
+    public class DataService : ISprint2Task5V2
     {
-        public string? FindDateOfPreviousDay(int m, int v)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string FindMothhName(int value)
+        public string FindMonthSeason(int value)
         {
             string res;
             switch (value)

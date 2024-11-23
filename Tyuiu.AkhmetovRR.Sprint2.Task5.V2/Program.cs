@@ -5,10 +5,7 @@ namespace Tyuiu.AkhmetovRR.Sprint2.Task5.V2
     {
         static void Main(string[] args)
         {
-            if (args is null)
-            {
-                throw new ArgumentNullException(nameof(args));
-            }
+            
 
             DataService ds = new DataService();
             Console.WriteLine("Введите номер месяца: ");
@@ -21,7 +18,7 @@ namespace Tyuiu.AkhmetovRR.Sprint2.Task5.V2
                 res = "Введено неверное значение!";
             }
             else
-                res = "Это время года:" + ds.FindMothhName(NumMouth);
+                res = "Это время года:" + ds.FindMonthSeason(NumMouth);
             Console.WriteLine(res);
             Console.ReadKey();
         }
